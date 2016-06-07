@@ -224,6 +224,23 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.jboss.maven.plugins</groupId>
+                <artifactId>maven-sleep-plugin</artifactId>
+                <version>1.0</version>
+                <executions>
+                    <execution>
+                        <id>sleep-25-seconds</id>
+                        <phase>pre-integration-test</phase>
+                        <goals>
+                            <goal>sleep</goal>
+                        </goals>
+                        <configuration>
+                            <delay>25</delay>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.18.1</version>
                 <configuration>
