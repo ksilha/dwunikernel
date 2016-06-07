@@ -21,7 +21,7 @@ public class HelloWorldResource {
     @GET
     public Map<String, Object> sayHello(@QueryParam("name") Optional<String> name) {
         Map<String, Object> result = new HashMap<>();
-        result.put("hello", String.format(template, name.or("Kevin")));
+        result.put("hello", String.format(template, name.or("Lilo")));
         return result;
     }
 }
