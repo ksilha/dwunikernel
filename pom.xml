@@ -140,7 +140,7 @@
                         <goals>
                             <goal>kill</goal>
                         </goals>
-                        <phase>post-integration-test</phase>
+                        <phase>site-deploy</phase>
                         <configuration>
                             <env>test</env>
                         </configuration>
