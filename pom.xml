@@ -106,7 +106,7 @@
             <plugin>
                 <groupId>com.boxfuse.client</groupId>
                 <artifactId>boxfuse-maven-plugin</artifactId>
-                <version>1.19.6.981</version>
+                <version>1.15.6.839</version>
                 <executions>
                     <execution>
                         <id>fuse-image</id>
@@ -121,16 +121,6 @@
                             <goal>run</goal>
                         </goals>
                         <phase>pre-integration-test</phase>
-                        <configuration>
-                            <env>test</env>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>get-info-on-test</id>
-                        <goals>
-                            <goal>info</goal>
-                        </goals>
-                        <phase>post-integration-test</phase>
                         <configuration>
                             <env>test</env>
                         </configuration>
