@@ -224,19 +224,20 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>org.jboss.maven.plugins</groupId>
-                <artifactId>maven-sleep-plugin</artifactId>
-                <version>1.0</version>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <configuration>
+                    <tasks>
+                        <sleep seconds="25" />
+                    </tasks>
+                </configuration>
                 <executions>
                     <execution>
-                        <id>sleep-25-seconds</id>
+                        <id>sleep-for-a-while</id>
                         <phase>pre-integration-test</phase>
                         <goals>
-                            <goal>sleep</goal>
+                            <goal>run</goal>
                         </goals>
-                        <configuration>
-                            <delay>25</delay>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
