@@ -6,7 +6,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <prerequisites>
-        <maven>3.0.0</maven>
+        <maven>3.3.3</maven>
     </prerequisites>
 
     <groupId>com.kwikaze</groupId>
@@ -65,7 +65,7 @@
     <pluginRepositories>
         <pluginRepository>
             <id>boxfuse-repo</id>
-            <url>http://files.boxfuse.com</url>
+            <url>https://files.boxfuse.com</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -106,7 +106,7 @@
             <plugin>
                 <groupId>com.boxfuse.client</groupId>
                 <artifactId>boxfuse-maven-plugin</artifactId>
-                <version>1.15.6.839</version>
+                <version>1.19.6.981</version>
                 <executions>
                     <execution>
                         <id>fuse-image</id>
