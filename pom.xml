@@ -126,16 +126,6 @@
                         </configuration>
                     </execution>
                     <execution>
-                        <id>kill-on-test</id>
-                        <goals>
-                            <goal>kill</goal>
-                        </goals>
-                        <phase>post-integration-test</phase>
-                        <configuration>
-                            <env>test</env>
-                        </configuration>
-                    </execution>
-                    <execution>
                         <id>run-on-prod</id>
                         <goals>
                             <goal>run</goal>
@@ -143,6 +133,16 @@
                         <phase>deploy</phase>
                         <configuration>
                             <env>prod</env>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>kill-on-test</id>
+                        <goals>
+                            <goal>kill</goal>
+                        </goals>
+                        <phase>post-integration-test</phase>
+                        <configuration>
+                            <env>test</env>
                         </configuration>
                     </execution>
                 </executions>
