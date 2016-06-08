@@ -182,7 +182,7 @@
             <plugin>
                 <groupId>com.boxfuse.client</groupId>
                 <artifactId>boxfuse-maven-plugin</artifactId>
-                <version>1.19.6.981</version>
+                <version>1.19.7.987</version>
                 <executions>
                     <execution>
                         <id>fuse-image</id>
